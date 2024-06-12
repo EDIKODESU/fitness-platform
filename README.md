@@ -20,7 +20,7 @@ Once you have verified the availability of the required components, you need to 
 
 ```bash
 git clone https://github.com/EDIKODESU/fitness-platform.git
-
+```
 ### 2. Configure the MySQL Database
 Next, you need to set up the database in MySQL. Create a new database and import the schema files included in the repository.
 
@@ -28,43 +28,49 @@ Next, you need to set up the database in MySQL. Create a new database and import
 Create a .env file in the root directory of the server project and add the necessary environment variables: 
 
 plaintext
-Копировать код
+```
 DB_HOST=your_database_host
 DB_USER=your_database_user
 DB_PASSWORD=your_database_password
 DB_NAME=your_database_name
 PORT=your_server_port
 JWT_SECRET=your_jwt_secret
-
+```
 example:
+```
 DB_HOST=localhost DB_PORT=3306
 DB_USER=yourusername
 DB_PASSWORD=yourpassword
 DB_NAME=fitness_platform
 JWT_SECRET=yourjwtsecret|
-
+```
 ### 4. Install Dependencies
 To install the necessary dependencies, execute the following commands in the frontend and backend directories:
 
 bash
 Копировать код
 # In frontend directory
+```
 npm install
 npm run build
-
+```
 # In backend directory
+```
 npm install
-
+```
 ### 5. Start the Project
 Finally, to start the project, ensure that the MySQL server is running. Then, execute the following commands:
 
 bash
 Копировать код
 # In backend directory
+```
 npm run start:dev
-
+```
 # In frontend directory
+```
 npm run dev
+```
 Now, your fitness platform should be up and running, accessible from the specified server address.
 
 Conclusion
